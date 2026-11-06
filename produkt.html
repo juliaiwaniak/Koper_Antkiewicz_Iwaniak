@@ -1,0 +1,802 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rustykalny Kubek Ziemi - CeraSfera</title>
+
+    <meta name="description"
+          content="Szczegóły produktu: Rustykalny Kubek Ziemi. Ręcznie toczona ceramika najwyższej jakości.">
+
+    <!-- Czcionki Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Lato:wght@300;400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Własny CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Nawigacja -->
+    <header>
+
+        <nav class="navbar navbar-expand-lg">
+
+            <div class="container">
+
+                <a class="navbar-brand fs-3" href="index.html">
+                    CeraSfera.
+                </a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Przełącz nawigację">
+
+                    <span class="navbar-toggler-icon"></span>
+
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end"
+                     id="navbarNav">
+
+                    <ul class="navbar-nav align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link px-3"
+                               href="index.html#o-nas">
+                                O nas
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link px-3"
+                               href="sklep.html">
+                                Sklep
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link px-3"
+                               href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link px-3"
+                               href="index.html#kontakt">
+                                Kontakt
+                            </a>
+                        </li>
+
+                        <!-- Ikony e-commerce -->
+                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+
+                            <!-- Konto użytkownika -->
+                            <a class="nav-link px-2 d-inline-block"
+                               href="konto.html"
+                               title="Konto użytkownika"
+                               aria-label="Konto użytkownika">
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="20"
+                                     height="20"
+                                     fill="currentColor"
+                                     class="bi bi-person-fill"
+                                     viewBox="0 0 16 16">
+
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+
+                                </svg>
+
+                            </a>
+
+                            <!-- Koszyk -->
+                            <a class="nav-link px-2 d-inline-block position-relative"
+                               href="koszyk.html"
+                               title="Koszyk"
+                               aria-label="Koszyk">
+
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="20"
+                                     height="20"
+                                     fill="currentColor"
+                                     class="bi bi-basket2-fill"
+                                     viewBox="0 0 16 16">
+
+                                    <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1"/>
+
+                                </svg>
+
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark badge-cart">
+                                    2
+                                </span>
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Główna zawartość strony -->
+    <main class="container my-5">
+
+        <!-- Nawigacja okruszkowa -->
+        <nav aria-label="breadcrumb" class="mb-4">
+
+            <ol class="breadcrumb">
+
+                <li class="breadcrumb-item">
+                    <a href="index.html"
+                       class="text-decoration-none text-muted">
+                        Strona Główna
+                    </a>
+                </li>
+
+                <li class="breadcrumb-item">
+                    <a href="sklep.html"
+                       class="text-decoration-none text-muted">
+                        Sklep
+                    </a>
+                </li>
+
+                <li class="breadcrumb-item active text-dark"
+                    aria-current="page">
+                    Rustykalny Kubek Ziemi
+                </li>
+
+            </ol>
+
+        </nav>
+
+
+        <!-- Sekcja produktu -->
+        <div class="row g-5 mb-5 align-items-start">
+
+
+            <!-- Galeria zdjęć -->
+            <div class="col-lg-6">
+
+                <!-- Zdjęcie główne -->
+                <div class="mb-3">
+
+                    <img src="img/pojedyncze.jpg"
+                         class="img-fluid w-100 shadow-sm rounded"
+                         alt="Rustykalny Kubek Ziemi - widok główny"
+                         id="mainImage"
+                         style="height: 380px; object-fit: cover;">
+
+                </div>
+
+
+                <!-- Miniatury -->
+                <div class="d-flex gap-3">
+
+                    <img src="img/pojedyncze.jpg"
+                         class="product-gallery-thumb rounded"
+                         alt="Kubek - widok główny"
+                         onclick="document.getElementById('mainImage').src=this.src"
+                         style="width: 80px; height: 80px; object-fit: cover; cursor: pointer;">
+
+                    <img src="img/zestaw.jpg"
+                         class="product-gallery-thumb rounded"
+                         alt="Kubek - widok zestawu"
+                         onclick="document.getElementById('mainImage').src=this.src"
+                         style="width: 80px; height: 80px; object-fit: cover; cursor: pointer;">
+
+                    <img src="img/box.jpg"
+                         class="product-gallery-thumb rounded"
+                         alt="Kubek - opakowanie prezentowe"
+                         onclick="document.getElementById('mainImage').src=this.src"
+                         style="width: 80px; height: 80px; object-fit: cover; cursor: pointer;">
+
+                </div>
+
+            </div>
+
+
+            <!-- Informacje o produkcie -->
+            <div class="col-lg-6">
+
+                <span class="badge bg-secondary mb-2">
+                    Kategoria: Pojedyncze formy
+                </span>
+
+                <h1 class="display-5 fw-bold mb-2">
+                    Rustykalny Kubek Ziemi
+                </h1>
+
+                <p class="text-muted small mb-3">
+                    Kod produktu: CS-KUB-01
+                </p>
+
+
+                <!-- Ocena produktu -->
+                <div class="mb-3 text-warning">
+
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+
+                    <span class="text-muted small ms-2">
+                        (4.8 / 5 na podstawie 24 opinii)
+                    </span>
+
+                </div>
+
+
+                <!-- Cena i dostępność -->
+                <div class="mb-4">
+
+                    <span class="text-decoration-line-through text-muted me-3 fs-5">
+                        89 zł
+                    </span>
+
+                    <span class="display-6 fw-bold text-dark">
+                        67 zł
+                    </span>
+
+                    <span class="badge bg-success ms-3">
+                        W magazynie (14 szt.)
+                    </span>
+
+                </div>
+
+
+                <!-- Krótki opis -->
+                <p class="text-muted mb-4">
+
+                    Ręcznie toczony kubek z naturalnej jasnej kamionki.
+                    Wyjątkowo przyjemny w dotyku, idealny do porannej
+                    kawy lub ulubionej herbaty.
+
+                    Każdy egzemplarz powstaje w naszej warszawskiej
+                    pracowni i nosi unikalne ślady rzemieślniczej obróbki.
+
+                </p>
+
+
+                <!-- Formularz zakupu -->
+                <form action="koszyk.html" method="GET">
+
+
+                    <!-- Wybór wykończenia -->
+                    <div class="mb-3">
+
+                        <label for="variantSelect"
+                               class="form-label small fw-bold">
+
+                            Wybierz wykończenie:
+
+                        </label>
+
+                        <select class="form-select"
+                                id="variantSelect"
+                                name="wariant">
+
+                            <option value="matowe" selected>
+                                Szkliwo matowe (piaskowe)
+                            </option>
+
+                            <option value="blyszczace">
+                                Szkliwo błyszczące (oliwkowe)
+                            </option>
+
+                            <option value="surowe">
+                                Surowa kamionka bez szkliwa
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Wybór ilości -->
+                    <div class="d-flex align-items-center gap-3 mb-4">
+
+                        <div>
+
+                            <label for="quantityInput"
+                                   class="form-label small fw-bold mb-1">
+
+                                Ilość:
+
+                            </label>
+
+                            <input type="number"
+                                   id="quantityInput"
+                                   name="ilosc"
+                                   class="form-control"
+                                   value="1"
+                                   min="1"
+                                   max="14"
+                                   style="width: 80px;">
+
+                        </div>
+
+
+                        <!-- Przycisk dodawania do koszyka -->
+                        <div class="flex-grow-1">
+
+                            <label class="form-label small fw-bold mb-1 d-block">
+                                &nbsp;
+                            </label>
+
+                            <button type="submit"
+                                    class="btn btn-dark w-100 py-2">
+
+                                Dodaj do koszyka
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+
+                <!-- Informacje o dostawie -->
+                <div class="border-top pt-3 text-muted small">
+
+                    <p class="mb-1">
+
+                        <i class="bi bi-truck me-2"></i>
+
+                        Bezpieczna dostawa kurierska w 24-48h
+
+                    </p>
+
+                    <p class="mb-0">
+
+                        <i class="bi bi-arrow-counterclockwise me-2"></i>
+
+                        14 dni na zwrot bez podania przyczyny
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Zakładki informacyjne -->
+        <div class="row my-5">
+
+            <div class="col-12">
+
+
+                <!-- Przyciski zakładek -->
+                <ul class="nav nav-tabs"
+                    id="productTabs"
+                    role="tablist">
+
+
+                    <!-- Zakładka: Opis -->
+                    <li class="nav-item" role="presentation">
+
+                        <button class="nav-link active text-dark fw-bold"
+                                id="desc-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#desc-tab-pane"
+                                type="button"
+                                role="tab"
+                                aria-controls="desc-tab-pane"
+                                aria-selected="true">
+
+                            Pełny opis
+
+                        </button>
+
+                    </li>
+
+
+                    <!-- Zakładka: Specyfikacja -->
+                    <li class="nav-item" role="presentation">
+
+                        <button class="nav-link text-dark fw-bold"
+                                id="spec-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#spec-tab-pane"
+                                type="button"
+                                role="tab"
+                                aria-controls="spec-tab-pane"
+                                aria-selected="false">
+
+                            Specyfikacja techniczna
+
+                        </button>
+
+                    </li>
+
+
+                    <!-- Zakładka: Opinie -->
+                    <li class="nav-item" role="presentation">
+
+                        <button class="nav-link text-dark fw-bold"
+                                id="reviews-tab"
+                                data-bs-toggle="tab"
+                                data-bs-target="#reviews-tab-pane"
+                                type="button"
+                                role="tab"
+                                aria-controls="reviews-tab-pane"
+                                aria-selected="false">
+
+                            Opinie klientów (24)
+
+                        </button>
+
+                    </li>
+
+                </ul>
+
+
+
+                <!-- Zawartość zakładek -->
+                <div class="tab-content p-4 bg-light shadow-sm border border-top-0"
+                     id="productTabsContent">
+
+
+                    <!-- Pełny opis -->
+                    <div class="tab-pane fade show active"
+                         id="desc-tab-pane"
+                         role="tabpanel"
+                         aria-labelledby="desc-tab"
+                         tabindex="0">
+
+                        <h5 class="mb-3">
+                            Filozofia i proces tworzenia
+                        </h5>
+
+                        <p>
+
+                            Rustykalny Kubek Ziemi został zaprojektowany
+                            z myślą o osobach, które cenią autentyczność
+                            i bliskość natury.
+
+                            Formowany ręcznie na kole garncarskim,
+                            z zachowaniem naturalnych nierówności,
+                            które sprawiają, że naczynie idealnie
+                            układa się w dłoniach.
+
+                        </p>
+
+                        <p class="mb-0">
+
+                            Wypalany w temperaturze 1240°C,
+                            co gwarantuje pełną odporność na wysokie
+                            temperatury, możliwość mycia w zmywarce
+                            oraz użytkowania w kuchence mikrofalowej.
+
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- Specyfikacja techniczna -->
+                    <div class="tab-pane fade"
+                         id="spec-tab-pane"
+                         role="tabpanel"
+                         aria-labelledby="spec-tab"
+                         tabindex="0">
+
+                        <h5 class="mb-3">
+                            Parametry techniczne
+                        </h5>
+
+                        <ul class="list-unstyled mb-0">
+
+                            <li>
+                                <strong>Pojemność:</strong>
+                                ok. 350 ml
+                            </li>
+
+                            <li>
+                                <strong>Wysokość:</strong>
+                                9.5 cm
+                            </li>
+
+                            <li>
+                                <strong>Średnica:</strong>
+                                8 cm
+                            </li>
+
+                            <li>
+                                <strong>Materiał:</strong>
+                                Kamionka szamotowa
+                            </li>
+
+                            <li>
+                                <strong>Metoda produkcji:</strong>
+                                100% handmade (koło garncarskie)
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <!-- Opinie klientów -->
+                    <div class="tab-pane fade"
+                         id="reviews-tab-pane"
+                         role="tabpanel"
+                         aria-labelledby="reviews-tab"
+                         tabindex="0">
+
+                        <h5 class="mb-3">
+                            Ostatnie opinie
+                        </h5>
+
+
+                        <!-- Opinia 1 -->
+                        <div class="mb-3 pb-3 border-bottom">
+
+                            <strong>
+                                Katarzyna M.
+                            </strong>
+
+                            <span class="text-muted small ms-2">
+                                15 Października 2026
+                            </span>
+
+                            <p class="mb-1 text-muted small mt-1">
+
+                                Absolutnie przepiękny kubek!
+                                W rzeczywistości wygląda jeszcze
+                                lepiej niż na zdjęciach.
+
+                            </p>
+
+                        </div>
+
+
+                        <!-- Opinia 2 -->
+                        <div>
+
+                            <strong>
+                                Piotr K.
+                            </strong>
+
+                            <span class="text-muted small ms-2">
+                                10 Października 2026
+                            </span>
+
+                            <p class="mb-1 text-muted small mt-1">
+
+                                Solidne wykonanie, świetnie
+                                trzyma ciepło kawy. Polecam!
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Produkty rekomendowane -->
+        <section class="mt-5 pt-4">
+
+            <h2 class="h3 text-center mb-4">
+
+                Mogą Ci się również zainteresować
+
+            </h2>
+
+
+            <div class="row g-4">
+
+
+                <!-- Produkt 1 -->
+                <div class="col-md-4">
+
+                    <div class="card card-premium h-100">
+
+                        <img src="img/pojedyncze.jpg"
+                             class="card-img-top product-thumb"
+                             alt="Głęboka Misa Kuchenna"
+                             style="height: 220px; object-fit: cover;">
+
+
+                        <div class="card-body p-3 d-flex flex-column text-center">
+
+                            <h3 class="card-title h6 mb-2">
+
+                                Głęboka Misa Kuchenna
+
+                            </h3>
+
+                            <p class="mb-3">
+
+                                <strong>
+                                    120 zł
+                                </strong>
+
+                            </p>
+
+                            <a href="produkt.html"
+                               class="btn btn-outline-dark btn-sm mt-auto">
+
+                                Zobacz szczegóły
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Produkt 2 -->
+                <div class="col-md-4">
+
+                    <div class="card card-premium h-100">
+
+                        <img src="img/zestaw.jpg"
+                             class="card-img-top product-thumb"
+                             alt="Zestaw Jadalniany 4-osobowy"
+                             style="height: 220px; object-fit: cover;">
+
+
+                        <div class="card-body p-3 d-flex flex-column text-center">
+
+                            <h3 class="card-title h6 mb-2">
+
+                                Zestaw Jadalniany 4-osobowy
+
+                            </h3>
+
+                            <p class="mb-3">
+
+                                <strong>
+                                    349 zł
+                                </strong>
+
+                            </p>
+
+                            <a href="produkt.html"
+                               class="btn btn-outline-dark btn-sm mt-auto">
+
+                                Zobacz szczegóły
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Produkt 3 -->
+                <div class="col-md-4">
+
+                    <div class="card card-premium h-100">
+
+                        <img src="img/box.jpg"
+                             class="card-img-top product-thumb"
+                             alt="Luksusowy Box Prezentowy"
+                             style="height: 220px; object-fit: cover;">
+
+
+                        <div class="card-body p-3 d-flex flex-column text-center">
+
+                            <h3 class="card-title h6 mb-2">
+
+                                Luksusowy Box Prezentowy
+
+                            </h3>
+
+                            <p class="mb-3">
+
+                                <strong>
+                                    199 zł
+                                </strong>
+
+                            </p>
+
+                            <a href="produkt.html"
+                               class="btn btn-outline-dark btn-sm mt-auto">
+
+                                Zobacz szczegóły
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- Stopka -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+
+        <div class="container">
+
+            <h5 class="mb-3 text-white">
+                CeraSfera.
+            </h5>
+
+            <p class="mb-1 text-secondary small">
+
+                NIP: 1234567890 |
+                REGON: 123456789
+
+            </p>
+
+            <p class="mb-0 text-secondary small">
+
+                &copy; 2026 CeraSfera.
+                Wszystkie prawa zastrzeżone.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
