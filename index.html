@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>CeraSfera. - Luksusowa Ceramika</title>
+    <meta name="description" content="CeraSfera. - Luksusowa, ręcznie formowana ceramika. Unikalne kubki, misy i zestawy jadalniane, które wprowadzą ciepło do Twojego wnętrza.">
+    <meta property="og:title" content="CeraSfera. - Luksusowa Ceramika">
+    <meta property="og:description" content="Ręcznie formowana ceramika najwyższej jakości. Odkryj piękno ukryte w detalu.">
+    <meta property="og:image" content="img/tlo.jpg">
+
+    <!-- Czcionki Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Dane strukturalne JSON-LD Schema.org -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "CeraSfera.",
+      "image": "img/tlo.jpg",
+      "description": "Pracownia ręcznie formowanej ceramiki najwyższej jakości.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "ul. Rzemieślnicza 12",
+        "addressLocality": "Warszawa",
+        "postalCode": "00-123",
+        "addressCountry": "PL"
+      },
+      "telephone": "+48500600700",
+      "email": "kontakt@cerasfera.pl"
+    }
+    </script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fs-3" href="index.html">CeraSfera.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Przełącz nawigację">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center">
+                        <li class="nav-item"><a class="nav-link px-3" href="index.html#o-nas">O nas</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="sklep.html">Sklep</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link px-3" href="index.html#kontakt">Kontakt</a></li>
+                        <!-- Ikony e-commerce -->
+                        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                            <a class="nav-link px-2 d-inline-block" href="konto.html" title="Konto użytkownika">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+    </svg>
+</a>
+                           <a class="nav-link px-2 d-inline-block position-relative" href="koszyk.html" title="Koszyk">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
+      <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1"/>
+    </svg>
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-dark badge-cart">2</span>
+</a>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sekcja Hero (Pasek fixed-top ładnie na nią nachodzi) -->
+        <section id="hero" style="background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)), url('img/tlo.jpg') center/cover no-repeat;">
+            <div class="container text-center text-white">
+                <h1 class="display-2 fw-bold mb-4">Sztuka Ziemi w Twoich Rękach</h1>
+                <p class="lead mb-5 mx-auto" style="max-width: 700px;">Ręcznie formowana ceramika najwyższej jakości. Tworzymy unikalne formy, które wprowadzają ciepło, luksus i harmonię do każdego wnętrza. Odkryj piękno ukryte w detalu.</p>
+                <a href="#kontakt" class="btn btn-premium fs-5">Skontaktuj się z nami</a>
+            </div>
+        </section>
+
+        <!-- Sekcja O nas -->
+        <section id="o-nas" class="container">
+            <div class="row align-items-center my-5">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h2 class="mb-4 display-5">Nasza Misja</h2>
+                    <p>W CeraSfera wierzymy, że przedmioty codziennego użytku powinny być nie tylko funkcjonalne, ale przede wszystkim posiadać duszę. Nasza pracownia to miejsce, gdzie tradycyjne rzemiosło spotyka się z nowoczesnym, minimalistycznym designem.</p>
+                    <p>Każdy kubek, misa czy wazon jest formowany ręcznie, co sprawia, że nie ma dwóch identycznych egzemplarzy. Naszą misją jest dostarczanie wyrobów, które celebrują unikalność i trwałość naturalnych materiałów.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/tlo.jpg" alt="Rzemieślnik w pracowni formujący naczynie z gliny na kole garncarskim" class="img-fluid shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sekcja Oferta z Twoimi zdjęciami -->
+        <section id="oferta" class="bg-light py-5">
+            <div class="container my-5">
+                <h2 class="text-center mb-5 display-5">Kluczowa Oferta</h2>
+                <div class="row g-4">
+                    
+                    <!-- Karta 1 -->
+                    <div class="col-md-4">
+                        <div class="card card-premium">
+                            <img src="img/pojedyncze.jpg" class="card-img-top" alt="Pojedyncze rustykalne kubki ceramiczne">
+                            <div class="card-body p-4 text-center">
+                                <h3 class="card-title h4">Pojedyncze Formy</h3>
+                                <p class="card-text text-muted mt-3">Unikalne, ręcznie toczone kubki, misy i talerze. Idealne do codziennych rytuałów, wprowadzające rzemieślniczy akcent na Twój stół.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Karta 2 -->
+                    <div class="col-md-4">
+                        <div class="card card-premium">
+                            <img src="img/zestaw.jpg" class="card-img-top" alt="Pełny zestaw jadalniany z ceramiki">
+                            <div class="card-body p-4 text-center">
+                                <h3 class="card-title h4">Zestawy Jadalniane</h3>
+                                <p class="card-text text-muted mt-3">Skomponowane kolekcje naczyń dla całej rodziny. Spójne kolorystycznie, choć różniące się subtelnymi, ręcznymi detalami.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Karta 3 -->
+                    <div class="col-md-4">
+                        <div class="card card-premium">
+                            <img src="img/box.jpg" class="card-img-top" alt="Ceramika zapakowana w luksusowy box prezentowy">
+                            <div class="card-body p-4 text-center">
+                                <h3 class="card-title h4">Boxy Prezentowe</h3>
+                                <p class="card-text text-muted mt-3">Luksusowo zapakowane zestawy gotowe do wręczenia. Połączenie naszej ceramiki z wyselekcjonowanymi herbatami lub kawą.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- NOWA SEKCJA: Aktualności / Blog -->
+        <section id="blog" class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5">Z Pracowni i Żywioł</h2>
+                <p class="text-muted">Odkryj tajniki rzemiosła, porady dotyczące pielęgnacji ceramiki oraz kulisy powstawania naszych unikalnych kolekcji.</p>
+            </div>
+            <div class="row g-4">
+                <!-- Karta wpisu 1 -->
+                <div class="col-md-4">
+                    <div class="card card-premium h-100">
+                        <img src="img/pojedyncze.jpg" class="card-img-top" alt="Proces wypalania ceramiki">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2 text-muted small">
+                                <span class="badge bg-secondary me-2">Rzemiosło</span> 22 Października 2026
+                            </div>
+                            <h3 class="card-title h5 mb-3">Jak powstaje idealny kubek? Od bryły gliny do porannej kawy</h3>
+                            <p class="card-text text-muted small mb-4">Poznaj etapy ręcznego formowania naczyń na kole garncarskim. Dowiedz się, dlaczego każdy egzemplarz nosi niepowtarzalny ślad dłoni artysty.</p>
+                            <a href="single.html" class="mt-auto text-decoration-none fw-bold" style="color: var(--color-accent);">Czytaj dalej &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Karta wpisu 2 -->
+                <div class="col-md-4">
+                    <div class="card card-premium h-100">
+                        <img src="img/zestaw.jpg" class="card-img-top" alt="Aranżacja stołu z ceramiką">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2 text-muted small">
+                                <span class="badge bg-secondary me-2">Styl Wnętrz</span> 18 Października 2026
+                            </div>
+                            <h3 class="card-title h5 mb-3">Sztuka nakrywania stołu: jak wprowadzić harmonię do jadalni</h3>
+                            <p class="card-text text-muted small mb-4">Naturalne barwy ziemi i organiczne kształty potrafią całkowicie odmienić charakter domowych posiłków. Zobacz nasze inspiracje na jesienne aranżacje.</p>
+                            <a href="single.html" class="mt-auto text-decoration-none fw-bold" style="color: var(--color-accent);">Czytaj dalej &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Karta wpisu 3 -->
+                <div class="col-md-4">
+                    <div class="card card-premium h-100">
+                        <img src="img/box.jpg" class="card-img-top" alt="Pakowanie prezentów ceramicznych">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="mb-2 text-muted small">
+                                <span class="badge bg-secondary me-2">Porady</span> 15 Października 2026
+                            </div>
+                            <h3 class="card-title h5 mb-3">Jak dbać o ręcznie robioną ceramikę, by służyła przez lata</h3>
+                            <p class="card-text text-muted small mb-4">Choć nasze naczynia są wypalane w bardzo wysokich temperaturach, odpowiednia pielęgnacja pozwala zachować ich szlachetne wykończenie na dłużej.</p>
+                            <a href="single.html" class="mt-auto text-decoration-none fw-bold" style="color: var(--color-accent);">Czytaj dalej &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="blog.html" class="btn btn-premium fs-6">Przejdź do pełnego archiwum wpisów</a>
+            </div>
+        </section>
+
+        <!-- Sekcja Kontakt -->
+        <section id="kontakt" class="container py-5">
+            <h2 class="text-center mb-5 display-5">Skontaktuj się z nami</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <div class="p-4 bg-light h-100 shadow-sm">
+                        <h4 class="mb-4">Nasza Pracownia</h4>
+                        <p><strong>Adres:</strong><br>ul. Rzemieślnicza 12<br>00-123 Warszawa</p>
+                        <p><strong>E-mail:</strong><br>kontakt@cerasfera.pl</p>
+                        <p><strong>Telefon:</strong><br>+48 500 600 700</p>
+                    </div>
+                </div>
+                <div class="col-md-7 offset-md-1">
+                    <form>
+                        <div class="mb-4">
+                            <label for="imieNazwisko" class="form-label text-muted">Imię i nazwisko</label>
+                            <input type="text" class="form-control" id="imieNazwisko" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="form-label text-muted">Adres e-mail</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="temat" class="form-label text-muted">Temat wiadomości</label>
+                            <select class="form-select" id="temat" required>
+                                <option value="" selected disabled>Wybierz temat...</option>
+                                <option value="1">Zapytanie ogólne</option>
+                                <option value="2">Wycena zamówienia indywidualnego</option>
+                                <option value="3">Współpraca B2B</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="wiadomosc" class="form-label text-muted">Treść zapytania</label>
+                            <textarea class="form-control" id="wiadomosc" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-premium w-100">Wyślij wiadomość</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <h5 class="mb-3 text-white">CeraSfera.</h5>
+            <p class="mb-1 text-secondary small">NIP: 1234567890 | REGON: 123456789</p>
+            <p class="mb-0 text-secondary small">&copy; 2026 CeraSfera. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        const menuToggle = document.getElementById('navbarNav');
+        const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle: false});
+        navLinks.forEach((l) => {
+            l.addEventListener('click', () => { if (menuToggle.classList.contains('show')) { bsCollapse.toggle() } })
+        });
+    </script>
+</body>
+</html>
